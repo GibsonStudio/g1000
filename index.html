@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="class_Canvas.js"></script>
+  <script type="text/javascript" src="garminSoftKeys.js"></script>
+  <script type="text/javascript" src="class_Garmin1000.js"></script>
+  <script type="text/javascript" src="class_Simulation.js"></script>
+  <script type="text/javascript" src="jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="lib.js"></script>
+</head>
+
+<body onload="init();">
+
+  <div id="g1000-container">
+    <div id="g1000-map"></div>
+    <canvas id="g1000-display" width="720" height="524"></canvas>
+    <div id="g1000-frame"></div>
+  </div>
+
+  ALT:
+  <input style="width:100%;" id="sAlt" type="range" min="-100" max="1000" value="0" step="0.01" oninput="updateVar(this.value, 'alt');" />
+  Heading:
+  <input style="width:100%;" id="sHeading" type="range" min="-200" max="500" value="0" step="0.01" oninput="updateVar(this.value, 'heading');" />
+  Fuel L:
+  <input style="width:100%;" id="sFuelL" type="range" min="-2" max="30" value="0" step="0.01" oninput="updateVar(this.value, 'fuelL');" />
+  Fuel R:
+  <input style="width:100%;" id="sFuelR" type="range" min="-2" max="30" value="0" step="0.01" oninput="updateVar(this.value, 'fuelR');" />
+
+
+</body>
+
+</html>

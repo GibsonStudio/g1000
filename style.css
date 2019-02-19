@@ -1,0 +1,14 @@
+
+
+#g1000-container { width:1000px; height:640px; margin:auto; position:relative; background-color:#121212; }
+
+#g1000-map {
+  position:absolute; width:720px; height:524px; left:140px; top:39px; display:none;
+  background-image:url('img/map_1.jpg'); background-size:400%; background-position: 100px 500px;
+}
+
+#g1000-frame { width:1000px; height:640px; position:absolute; left:0; top:0; background-image:url('img/g1000_frame.png'); }
+
+#g1000-display { position:absolute; left:140px; top:39px; /* background-color:#121212; */ }
+
+.buSoftKey { position:absolute; width:30px; height:20px; background-color:#ffffff00; cursor:pointer; }
